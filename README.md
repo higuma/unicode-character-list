@@ -16,6 +16,12 @@ Each table popups a character code, name, and general category on hovering a mou
 
 → General Category Values: https://www.unicode.org/reports/tr44/#General_Category_Values
 
+The following code areas are omtted.
+
+* Surrogates (General category = Cs)
+* Private-use characters (General category = Co)
+* Unassined (General category = Co)
+
 ## Generating tables
 
 Tables are generated with Ruby. The following command accesses [the Unicode Character Database](https://unicode.org/ucd/) and update the whole tables to the newest contents.
