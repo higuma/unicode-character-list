@@ -81,7 +81,7 @@ end
 
 def output_line(f, base, items)
   return if items.empty?
-  f.print "| #{sprintf "%02X\\*\\*", base / 16} |"
+  f.print "| #{sprintf "%03X\\*", base / 16} |"
   for i in 0..15
     code = base + i
     hex = sprintf "%04X", code
