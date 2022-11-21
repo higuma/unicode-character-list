@@ -62,7 +62,7 @@ CONTROL_NAME = Proc.new {
 
 def format_char(info)
   if info.category == 'Cc'
-    "<kbd>#{CONTROL_NAME[info.code]}</kbd>"
+    "`#{CONTROL_NAME[info.code]}`<br><br>"
   else
     case info.chr
     when ' '
